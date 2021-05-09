@@ -299,13 +299,9 @@ input {
 /* Footer ================================== */
 footer {
   text-align: center;
-  padding: 4rem 0 2rem;
+  padding: 2rem 0 2rem;
   color: var(--text);
-  bottom:0;
-  position:absolute;
-  bottom:0;
-  width:100%;
-  
+  bottom:0;  
   opacity: 0.6;
 }
 
