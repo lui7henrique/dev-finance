@@ -301,7 +301,7 @@ footer {
   text-align: center;
   padding: 2rem 0 2rem;
   color: var(--text);
-  bottom:0;  
+  width:100%;
   opacity: 0.6;
 }
 
@@ -309,6 +309,11 @@ footer {
 @media (min-width: 800px) {
   html {
     font-size: 87.5%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
   }
 
   #balance {
