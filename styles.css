@@ -1,10 +1,13 @@
 /* Global ================================== */
 :root {
-  --dark-green: #1a2a20;
+  --primary: #6E21D1;
+  --secondary: #4b00ad;
   --light-green: #316f3d;
   --red: #dc383b;
   --green: #12a454;
-  --branquin: #f0f2f5;
+  --background: #121214;
+  --section: #202024;
+  --text: #c9d1d9;
 }
 
 * {
@@ -19,7 +22,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--branquin);
+  background-color: var(--background);
 }
 
 .sr-only {
@@ -43,13 +46,13 @@ body {
 h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
-  color: var(--dark-green);
+  color: var(--text);
   font-weight: 400;
 }
 
 /* Links & Buttons ================================== */
 a {
-  color: var(--dark-green);
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -58,28 +61,24 @@ button {
   height: 50px;
 
   border: none;
-  color: var(--branquin);
-  background: var(--light-green);
+  color: var(--background);
+  background: var(--primary);
   border-radius: 0.25rem;
 
   cursor: pointer;
-  transition: 0.4s ease;
+  transition: background 0.4s;
 }
 
 button:hover {
-  transition: color 1s;
+  background: var(--secondary);
 }
 
-a:hover {
-  color: var(--light-green);
-}
 
 .button.new {
   display: inline-block;
   margin-bottom: 0.8rem;
-  color: var(--light-green);
+  color: var(--primary);
 }
-
 
 .button.cancel {
   color: var(--red);
@@ -100,13 +99,13 @@ a:hover {
 
 /* Header ================================== */
 header {
-  background: #324637;
+  background: var(--primary);
   padding: 2rem 0 10rem;
   text-align: center;
 }
 
 .logo {
-  /* deixa roxin filter: hue-rotate(170deg); */ 
+  filter: hue-rotate(155deg);
   width: 300px;
 }
 
@@ -121,12 +120,12 @@ header {
 
 /* Cards ================================== */
 .card {
-  background: white;
+  background: var(--section);
   padding: 1.5rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 
   margin-bottom: 2rem;
-  color: var(--dark-green);
+  color: var(--text);
 }
 
 .card h3 {
@@ -147,7 +146,7 @@ header {
 }
 
 .card.total {
-  background: var(--light-green);
+  background: var(--secondary);
   color: white;
 }
 
@@ -155,7 +154,7 @@ header {
 #data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
-  color: var(--dark-green);
+  color: var(--text);
 }
 
 table thead tr th:first-child,
@@ -169,10 +168,10 @@ table tbody tr td:last-child {
 }
 
 table th {
-  background: white;
+  background: var(--section);
   text-align: left;
   font-weight: normal;
-  color: var(--dark-green);
+  color: var(--text);
   padding: 1rem 2rem;
 }
 
@@ -186,12 +185,12 @@ table tbody tr:hover {
 }
 
 table td {
-  background-color: white;
+  background-color: var(--section);
   padding: 1rem 2rem;
 }
 
 td.description {
-  color: var(--dark-green);
+  color: var(--text);
 }
 
 td.income {
@@ -228,7 +227,7 @@ td.expense {
 
 .modal {
   border-radius: 5px;
-  background: var(--branquin);
+  background: var(--background);
   padding: 2.4rem;
 
   width: 90%;
@@ -277,7 +276,7 @@ input {
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
-  color: var(--dark-green);
+  color: var(--text);
   
   opacity: 0.6;
 }
